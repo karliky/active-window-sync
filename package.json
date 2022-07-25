@@ -1,0 +1,17 @@
+{
+  "name": "active-window-sync",
+  "version": "0.0.0",
+  "description": "synchronous function to get most foreground active window title",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "bindings": "~1.2.1",
+    "node-addon-api": "^1.0.0"
+  },
+  "scripts": {
+    "rebuild": "node-gyp build",
+    "install": "node-gyp configure && node-gyp build",
+    "test": "node index.js"
+  },
+  "gypfile": true
+}
